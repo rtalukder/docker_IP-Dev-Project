@@ -1,0 +1,49 @@
+<!-- Raquib Talukder    -->
+<!-- IP Dev Project     -->
+<!-- signin.html        -->
+
+<html lang="en">
+  <head>
+    <title>IP Development- Simple API Server</title>
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+    <link href="signup/signup.css" rel="stylesheet">
+   
+   
+  </head>
+
+  <body>
+ <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="nav-item"><a class="nav-link active" href="#/home">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Sign In</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/signUp">Sign Up</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">IP Development- Simple API Server</h3>
+      </div>
+
+      <div class="jumbotron" ng-controller="SignInCtrl">
+        <h1>Sign In</h1>
+        <form class="form-signin">
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" name="inputUsername" id="inputUsername" ng-model="username" class="form-control" placeholder="Username"  autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" ng-model="password" class="form-control" placeholder="Password" >
+        
+        <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" ng-click="signIn()">Sign in</button>
+      </form>
+      </div>
+
+      
+
+      <footer class="footer">
+        <p>Forsythe Academy- IP Development</p>
+      </footer>
+
+    </div>
+  </body>
+  </html>

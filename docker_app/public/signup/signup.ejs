@@ -1,0 +1,59 @@
+<!-- Raquib Talukder    -->
+<!-- IP Dev Project     -->
+<!-- signup.ejs         -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IP Development- Simple API Server</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+    <link href="signup/signup.css" rel="stylesheet">
+   
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="nav-item" ><a class="nav-link active" href="#/home">Home</a></li>
+            <li class="nav-item" ><a class="nav-link active" href="#/signin">Sign In</a></li>
+            <li class="nav-item" ><a class="nav-link active" href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Sign Up</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>IP Development- Simple API Server</h1>
+        <form class="form-signin" action="/register" method="post">
+        <label for="inputFirstName" class="sr-only">First Name</label>
+        <input type="name" name="inputFirstName" id="inputFirstName" class="form-control" placeholder="First Name" required autofocus>
+        <label for="inputLastName" class="sr-only">Last Name</label>
+        <input type="name" name="inputLastName" id="inputLastName" class="form-control" placeholder="Last Name" required autofocus>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="name" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+        
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+    <span style="color:red;"><%= error %></span>
+      </form>
+      </div>
+
+      
+
+      <footer class="footer">
+        <p>Forsythe Academy- IP Development</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
+
