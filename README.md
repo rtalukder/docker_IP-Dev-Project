@@ -2,9 +2,13 @@
 Repo for work around containerization of IP Dev Project
 
 ```
-docker-compose up
+for docker_eve
+
+docker-compose up --build
 ```
 
 ```
-docker run -d docker_app
+for docker_app
+
+docker run -p 3000:3000 --network=docker_eve_default docker_app
 ```

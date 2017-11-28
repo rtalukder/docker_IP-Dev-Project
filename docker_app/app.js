@@ -48,12 +48,12 @@ app.post('/register', function(req, resp) {
     var _password = req.body.inputPassword;
 
     var options = {
-        url: 'http://172.17.0.2:5000/users/',
+        url: 'http://localhost:5000/users/',
         method: 'POST',
-        auth: {
-            user: 'admin',
-            password: 'password'
-        },
+        // auth: {
+        //     user: 'admin',
+        //     password: 'password'
+        // },
         formData: {
             firstname: _firstName,
             lastname: _lastName,
@@ -86,5 +86,5 @@ app.post('/register', function(req, resp) {
 });
 
 // hit app at http://localhost:3000
-console.log("* Running on http://172.17.0.2:3000/ (Press CTRL+C to quit)")
+console.log("* Running on http://localhost:3000/ (Press CTRL+C to quit)")
 app.listen(3000)
